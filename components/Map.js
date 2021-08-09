@@ -28,7 +28,7 @@ function Map({ searchResults }) {
     <ReactMapGL
       {...viewport}
       mapStyle="mapbox://styles/samsaver/cks17wjnt30l617qooae8uiee"
-      mapboxApiAccessToken={process.env.mapbox_key}
+      mapboxApiAccessToken={process.env.NEXT_PUBLIC_mapbox_key}
       onViewportChange={viewportChangeHandler}
     >
       {searchResults.map((result) => (
